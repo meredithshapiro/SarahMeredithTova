@@ -31,6 +31,9 @@ dataset = rbind(f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15,f16,f17,f18,f
 View(dataset)
 dataset=dataset[,-1]
 #View(smalldataset)
+     #Turn factor cols into character 
+     dataset[,c(2:7,22,23,28)]=as.character(dataset[,c(2:7,22,23,28)])
+     View(dataset)
 
 ####################################################################################
 library(spotifyr)
